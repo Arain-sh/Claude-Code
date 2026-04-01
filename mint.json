@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "arain Architecture",
+  "name": "Claude-Code Architecture",
   "logo": {
     "dark": "/docs/logo/dark.svg",
     "light": "/docs/logo/light.svg"
@@ -22,7 +22,7 @@
   },
   "topbarCtaButton": {
     "type": "github",
-    "url": "https://github.com/Arain-sh/arain-code"
+    "url": "https://github.com/Arain-sh/Claude-Code"
   },
   "search": {
     "prompt": "搜索 arain 架构文档..."
@@ -112,6 +112,6 @@
     }
   ],
   "footerSocials": {
-    "github": "https://github.com/Arain-sh/arain-code"
+    "github": "https://github.com/Arain-sh/Claude-Code"
   }
 }

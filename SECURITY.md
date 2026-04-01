@@ -14,4 +14,4 @@ Security fixes are handled on a best-effort basis for the latest code in this re
 
 Please report vulnerabilities privately to <arain.shjia@gmail.com>.
 
-If email is not practical, open a private GitHub security advisory or contact the maintainer through the repository issue tracker at <https://github.com/Arain-sh/arain-code/issues> and avoid posting exploit details publicly until the issue has been reviewed.
+If email is not practical, open a private GitHub security advisory or contact the maintainer through the repository issue tracker at <https://github.com/Arain-sh/Claude-Code/issues> and avoid posting exploit details publicly until the issue has been reviewed.

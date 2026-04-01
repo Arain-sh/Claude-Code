@@ -6,11 +6,11 @@
   "author": "Arain <arain.shjia@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Arain-sh/arain-code.git"
+    "url": "git+https://github.com/Arain-sh/Claude-Code.git"
   },
   "homepage": "https://arain.ink",
   "bugs": {
-    "url": "https://github.com/Arain-sh/arain-code/issues"
+    "url": "https://github.com/Arain-sh/Claude-Code/issues"
   },
   "keywords": [
     "arain",

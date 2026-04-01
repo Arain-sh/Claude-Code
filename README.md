@@ -1,6 +1,6 @@
-# arain-code
+# Claude-Code
 
-`arain-code` 是由 [Arain](https://github.com/Arain-sh) 维护的终端原生 AI Coding CLI 项目，基于对 Anthropic 官方 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI 的逆向工程、整理与可运行化改造。
+`Claude-Code` 是由 [Arain](https://github.com/Arain-sh) 维护的终端原生 AI Coding CLI 项目，基于对 Anthropic 官方 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI 的逆向工程、整理与可运行化改造。
 
 仓库当前仍保留了不少上游实现命名与兼容层，以避免破坏运行时行为；但对外展示的项目元数据、维护者信息、主页与仓库说明已经统一切换到 `arain` 品牌。
 
@@ -9,7 +9,7 @@
 - GitHub: <https://github.com/Arain-sh>
 - 邮箱: <arain.shjia@gmail.com>
 - 主页: <https://arain.ink>
-- 计划仓库地址: <https://github.com/Arain-sh/arain-code>
+- 计划仓库地址: <https://github.com/Arain-sh/Claude-Code>
 
 ## 声明
 
@@ -51,7 +51,7 @@ bun run build
 ## 相关文档及网站
 
 - 项目主页: <https://arain.ink>
-- GitHub 仓库: <https://github.com/Arain-sh/arain-code>
+- GitHub 仓库: <https://github.com/Arain-sh/Claude-Code>
 - 本地文档目录: `docs/`
 
 ## 能力清单
@@ -308,7 +308,7 @@ bun run build
 ## 项目结构
 
 ```
-arain-code/
+Claude-Code/
 ├── src/
 │   ├── entrypoints/
 │   │   ├── cli.tsx          # 入口文件（含 MACRO/feature polyfill）
