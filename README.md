@@ -2,14 +2,14 @@
 
 `Claude-Code` 是由 [Arain](https://github.com/Arain-sh) 维护的终端原生 AI Coding CLI 项目，基于对 Anthropic 官方 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI 的逆向工程、整理与可运行化改造。
 
-仓库当前仍保留了不少上游实现命名与兼容层，以避免破坏运行时行为；但对外展示的项目元数据、维护者信息、主页与仓库说明已经统一切换到 `arain` 品牌。
+当前仓库对外采用 `Claude-Code` 项目名，并明确标注维护者为 `Arain`。为了尽量不破坏运行时行为，源码内部仍保留了一部分上游命名和兼容层。
 
 ## 维护信息
 
+- 仓库: <https://github.com/Arain-sh/Claude-Code>
 - GitHub: <https://github.com/Arain-sh>
 - 邮箱: <arain.shjia@gmail.com>
 - 主页: <https://arain.ink>
-- 计划仓库地址: <https://github.com/Arain-sh/Claude-Code>
 
 ## 声明
 
@@ -38,6 +38,9 @@ bun install
 # 开发模式, 看到版本号 888 说明就是对了
 bun run dev
 
+# 快速冒烟验证
+bun run smoke
+
 # 构建
 bun run build
 ```
@@ -50,8 +53,8 @@ bun run build
 
 ## 相关文档及网站
 
-- 项目主页: <https://arain.ink>
 - GitHub 仓库: <https://github.com/Arain-sh/Claude-Code>
+- 维护者主页: <https://arain.ink>
 - 本地文档目录: `docs/`
 
 ## 能力清单
@@ -252,22 +255,22 @@ bun run build
 
 | 子命令 | 状态 | 说明 |
 |--------|------|------|
-| `arain`（默认） | ✅ | 主 REPL / 交互 / print 模式 |
-| `arain mcp serve/add/remove/list/get/...` | ✅ | MCP 服务管理（7 个子命令） |
-| `arain auth login/status/logout` | ✅ | 认证管理 |
-| `arain plugin validate/list/install/...` | ✅ | 插件管理（7 个子命令） |
-| `arain setup-token` | ✅ | 长效 Token 配置 |
-| `arain agents` | ✅ | 代理列表 |
-| `arain doctor` | ✅ | 健康检查 |
-| `arain update` / `upgrade` | ✅ | 自动更新 |
-| `arain install [target]` | ✅ | Native 安装 |
-| `arain server` | ❌ | `DIRECT_CONNECT` flag |
-| `arain ssh <host>` | ❌ | `SSH_REMOTE` flag |
-| `arain open <cc-url>` | ❌ | `DIRECT_CONNECT` flag |
-| `arain auto-mode` | ❌ | `TRANSCRIPT_CLASSIFIER` flag |
-| `arain remote-control` | ❌ | `BRIDGE_MODE` + `DAEMON` flag |
-| `arain assistant` | ❌ | `KAIROS` flag |
-| `arain up/rollback/log/error/export/task/completion` | ❌ | ANT-ONLY |
+| `claude-code`（默认） | ✅ | 主 REPL / 交互 / print 模式 |
+| `claude-code mcp serve/add/remove/list/get/...` | ✅ | MCP 服务管理（7 个子命令） |
+| `claude-code auth login/status/logout` | ✅ | 认证管理 |
+| `claude-code plugin validate/list/install/...` | ✅ | 插件管理（7 个子命令） |
+| `claude-code setup-token` | ✅ | 长效 Token 配置 |
+| `claude-code agents` | ✅ | 代理列表 |
+| `claude-code doctor` | ✅ | 健康检查 |
+| `claude-code update` / `upgrade` | ✅ | 自动更新 |
+| `claude-code install [target]` | ✅ | Native 安装 |
+| `claude-code server` | ❌ | `DIRECT_CONNECT` flag |
+| `claude-code ssh <host>` | ❌ | `SSH_REMOTE` flag |
+| `claude-code open <cc-url>` | ❌ | `DIRECT_CONNECT` flag |
+| `claude-code auto-mode` | ❌ | `TRANSCRIPT_CLASSIFIER` flag |
+| `claude-code remote-control` | ❌ | `BRIDGE_MODE` + `DAEMON` flag |
+| `claude-code assistant` | ❌ | `KAIROS` flag |
+| `claude-code up/rollback/log/error/export/task/completion` | ❌ | ANT-ONLY |
 
 ### 服务层
 
@@ -371,7 +374,7 @@ Claude-Code/
 | `BRIDGE_MODE` | 远程控制桥接 — 允许外部客户端远程操控 Claude Code |
 | `DAEMON` | 守护进程 — 后台常驻服务，支持 worker 和 supervisor |
 | `BG_SESSIONS` | 后台会话 — `ps`/`logs`/`attach`/`kill`/`--bg` 等后台进程管理 |
-| `SSH_REMOTE` | SSH 远程 — `arain ssh <host>` 连接远程主机 |
+| `SSH_REMOTE` | SSH 远程 — `claude-code ssh <host>` 连接远程主机 |
 | `DIRECT_CONNECT` | 直连模式 — `cc://` URL 协议、server 命令、`open` 命令 |
 | `CCR_REMOTE_SETUP` | 网页端远程配置 — 通过浏览器配置 Claude Code |
 | `CCR_MIRROR` | Claude Code Runtime 镜像 — 会话状态同步/复制 |

@@ -1,18 +1,21 @@
 {
-  "name": "arain-code",
+  "name": "claude-code-arain",
   "version": "1.0.3",
-  "description": "Arain's terminal-native AI coding assistant, based on a reverse-engineered Claude Code CLI implementation",
+  "description": "Unofficial Claude-Code fork maintained by Arain, based on a reverse-engineered Claude Code CLI implementation",
   "type": "module",
   "author": "Arain <arain.shjia@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Arain-sh/Claude-Code.git"
   },
-  "homepage": "https://arain.ink",
+  "homepage": "https://github.com/Arain-sh/Claude-Code#readme",
   "bugs": {
     "url": "https://github.com/Arain-sh/Claude-Code/issues"
   },
   "keywords": [
+    "claude-code",
+    "claude",
+    "anthropic",
     "arain",
     "cli",
     "ai",
@@ -25,7 +28,7 @@
     "bun": ">=1.2.0"
   },
   "bin": {
-    "arain": "dist/cli.js"
+    "claude-code": "dist/cli.js"
   },
   "workspaces": [
     "packages/*",
@@ -41,8 +44,9 @@
     "lint": "biome lint src/",
     "lint:fix": "biome lint --fix src/",
     "format": "biome format --write src/",
-    "prepare": "git config core.hooksPath .githooks",
+    "prepare": "git rev-parse --git-dir >/dev/null 2>&1 && git config core.hooksPath .githooks || true",
     "test": "bun test",
+    "smoke": "bun run src/entrypoints/cli.tsx -v && bun test",
     "check:unused": "knip-bun",
     "health": "bun run scripts/health-check.ts",
     "docs:dev": "npx mintlify dev"

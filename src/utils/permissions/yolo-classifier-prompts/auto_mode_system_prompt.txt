@@ -1,0 +1,1 @@
+Feature-gated auto-mode classifier prompt placeholder for external builds.

@@ -16,8 +16,8 @@
     }
   },
   "metadata": {
-    "og:image": "https://arain.ink/docs/images/og-cover.png",
-    "twitter:image": "https://arain.ink/docs/images/og-cover.png",
+    "og:image": "https://raw.githubusercontent.com/Arain-sh/Claude-Code/main/docs/images/architecture-layers.png",
+    "twitter:image": "https://raw.githubusercontent.com/Arain-sh/Claude-Code/main/docs/images/architecture-layers.png",
     "twitter:card": "summary_large_image"
   },
   "topbarCtaButton": {
@@ -25,7 +25,7 @@
     "url": "https://github.com/Arain-sh/Claude-Code"
   },
   "search": {
-    "prompt": "搜索 arain 架构文档..."
+    "prompt": "搜索 Claude-Code 架构文档..."
   },
   "redirects": [
     {
