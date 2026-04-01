@@ -1,5 +1,13 @@
 # Claude-Code
 
+> **Warning**
+>
+> This repository is an unofficial reconstruction derived from the public npm package and source map analysis, and is provided for research purposes only. It does not represent the structure of the original internal development repository.
+>
+> **警告**
+>
+> 本仓库为非官方整理与还原版本，基于公开 npm 发布包与 source map 分析生成，仅供研究使用，不代表官方原始内部开发仓库结构。
+
 `Claude-Code` 是由 [Arain](https://github.com/Arain-sh) 维护的终端原生 AI Coding CLI 项目，基于对 Anthropic 官方 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI 的逆向工程、整理与可运行化改造。
 
 当前仓库对外采用 `Claude-Code` 项目名，并明确标注维护者为 `Arain`。为了尽量不破坏运行时行为，源码内部仍保留了一部分上游命名和兼容层。
